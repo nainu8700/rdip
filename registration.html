@@ -1,0 +1,158 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .mainheader{
+                width: 100%;
+                height:100px;
+            }
+            .subheader{
+                
+                width:100%;
+                height:100px;
+                
+            }
+            .subheader   ul {
+            list-style-type: none;
+             margin: 0;
+              overflow: hidden;
+             background-color:black;
+            }
+            .subheader li {
+            float: left;
+            }
+
+            .mainheader .imgs {
+                float:left;
+                margin:20px;
+            }
+            .mainheader a{
+                font: 1.5em sans-serif;
+                float: right;
+                margin:30px;
+                text-decoration:none;
+            }
+            
+            .subheader li a {
+                text-decoration: none;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 18px 26px;
+                }
+                label {
+                   font-weight: bold;
+                   margin:5px;
+                   text-align:center;
+                }
+               
+                input[type=text]{
+                margin: 8px 58px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 4px;
+                box-sizing: border-box;
+                }
+                #email{
+                    margin-left:85px;
+                }
+                #num{
+                    margin-left:65px;
+                }
+                form{
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                #male{
+                    margin-left:80px;
+
+                }
+                #html{
+                    margin-left:10px;
+                }
+                #college{
+                    margin-left:80px;
+
+                }
+                input[type=reset],input[type=submit] {
+  padding: 14px 30px;
+  margin: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#tc{
+    margin-left:20px;
+}
+.frms{
+    padding: 5vh;
+}
+
+
+        </style>
+        <title>registration Page</title>
+    </head>
+    <body>
+        <div class="mainheader">
+       <a  class="imgs" href="https://www.iiit.ac.in/ "><img src="C:\Users\sony\Desktop\assignment\iiit-new.png" width="100"></a>
+        <a href="https://serc.iiit.ac.in/rdip">RDIP</a>
+        </div>
+        <div class="subheader">
+            <ul>
+                <li><a  href="C:\Users\sony\Desktop\assignment\homepage.html">Home</a></li>
+                <li><a href="C:\Users\sony\Desktop\assignment\registration.html">Registration Form </a></li>
+              </ul>
+        </div>
+        <div class="frms" >
+        <form method="GET" action="C:\Users\sony\Desktop\assignment\details.html">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"  required><br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email"  required><br>
+            <label for="num">Phone  No:</label>
+            <input type="text" id="num" name="num"  required>
+            <br>
+            <br>
+            <label>Gender:</label>
+            
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br>
+            <br>
+         
+            <label>Reason for RDIP:</label>
+            
+            <input type="checkbox" id="html" name="reason" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="reason" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="reason" value="JavaScript">
+            <label for="js">JavaScript</label><br>
+            <br>
+
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college"  required><br>
+            <br>
+              
+            <input type="checkbox" id="tc" name="tc" value="I Declare above details given by me are true." required>
+            <label for="tc" style="margin-left:18vh;">I Declare above details given by me are true.</label>
+
+                <br>
+                <input type = "submit" name = "submit"  value = "Submit" />
+               <input type = "reset" name = "reset"  value = "Reset" />
+
+        </form>
+    </body>
+</html>
